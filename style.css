@@ -1,0 +1,196 @@
+
+#logo
+{
+    display: block;
+    width: 50;
+    height: 50px;
+    position: absolute; /* Indiquez les propriétés CSS ici */
+}
+
+
+body
+{
+overflow-x: hidden;/* derule la pages*/  
+margin: 0;               /* enleneve les marges(on na plus les espace des cotes*/
+}
+#site
+{
+width: 1000px;
+margin: auto;
+}
+
+#menu                             /* on va trete balise par balise : menu,menu ul,menu ul i,menu ul i a*/            
+{
+    width: 100;                                                           /* largeure de la page*/            
+    height: 100px;                                                        /* hauteure de la page*/  
+    position: relative;                                                   /* */  
+}
+#menu ul
+{
+    float: right;   /*on s'va atache ensuite menu ul ,en va demande d'avoire des element flotant sur la droite enleve les espace  */  
+    right:50%; /* */  
+    position: static;
+    padding-top: 15px;
+    margin-right: 0px;
+}
+
+#menu ul li
+{
+    margin-right: 20px; /*marge de la gauche  */  
+    float: left;        /* permet a'les element de etre verticaal(pas orisontal)*/  
+    list-style-type: none; /* enleve les petite pointe de la liste */  
+    position: relative; /* */  
+    right: 0; /* */  
+}
+#menu ul li a
+{
+    
+    color:#0065FC ; /*couleure de text*/  
+    text-decoration: none; /* enleve les decoration tex*/  
+}
+
+#menu ul li a:hover
+{
+color: #DEEBFF;
+}
+
+
+#conteneurprincipal
+{
+display: block;
+width: auto;
+margin: auto;
+}
+
+
+
+
+
+
+
+
+
+.conteneurprincipal2               /* BUTON RECHERCHE*/
+{
+    position: relative;
+    top: 10%;
+    left: 25%;
+    width: 500px;
+    transform: translate(-50%,-50%);
+}
+input                           
+{
+position: relative;
+display: inline-block;
+font-size: 15px;
+box-sizing: border-box;
+transition: .5s;
+}
+input[type="text"]
+{
+background:#fff;
+width: 200px;
+height: 35px;
+border: none;                  /* modif*/
+outline:none;                  /* modif*/
+padding: 0 15px;
+border: 1px solid #F2F2F2;
+border-radius: 0 0 0 0;
+color: black;
+}
+input[type="submit"]
+{
+position: relative;
+left: -5px;
+border-radius: 0 15px 15px 0;
+width: 100px;
+height: 33px;
+border:none;
+outline: none;
+cursor: pointer;
+background:#0065FC;
+color: #fff;
+}
+
+
+input[type="submit"]:hover
+{
+background:  #DEEBFF;
+}
+
+
+
+
+
+
+
+
+input[type="url"]/* class button1*/
+{
+width: 15%;
+border: 2px solid gray;
+border-radius: 20px;
+margin: 8px 0;
+outline: none;
+padding: 8px;
+box-sizing: border-box;
+transition: 3s;
+}
+
+input[type="url"] :focus{
+    border-color: #DEEBFF;
+    box-shadow: 0 0 8px 0 #DEEBFF;
+}
+
+.button1 input[type="url"]
+{
+padding-left: 40px;
+
+}
+
+.button1
+{
+position: relative;
+}
+.button1 i
+{
+position: absolute;
+left: 0;
+top: 8px;
+padding: 9px 8px;
+color :#0065FC;
+}
+
+.button1 input[type="url"]:focus +i
+{
+color: #0065FC;
+}
+
+
+
+
+
+#conteneur
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: #F2F2F2;
+
+}
+
+
+#conteneur1
+{
+background-color: #F2F2F2;
+}
+
+
+
+
+img
+{
+    width: 100px;
+    border-radius: 10px;
+}
