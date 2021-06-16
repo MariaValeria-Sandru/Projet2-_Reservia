@@ -32,9 +32,9 @@ img{
   width: 100px;
   height: 100px;
  position: absolute;
-  padding-top: 50px;
+  padding-top: 35px;
   margin: 0;
-  padding-left: 5px;
+  padding-left: 50px;
 font-size: 30px;
 }
 
@@ -55,7 +55,7 @@ nav ul
   float: right; 
   left: 0; 
   position: relative;
-  padding-top: 15px;
+  MARGIN-TOP: 0;
   margin-right: 0px;
   
 }
@@ -81,12 +81,16 @@ nav ul li a
 }
 
  .hebergement_info 
-
-{padding-top: 20px;
+{
+  padding-top: 40px;
   border-top: 2px solid blue;
+  
+  
   
 
 }
+
+
 .activity_info  a{
   color: black;
 }
@@ -96,20 +100,20 @@ nav ul li a
   
   margin-right: 0;
   padding-right: 5px;
- padding-top: 20px;
+ padding-top: 40px;
 }
 .activity_info 
 {
   text-decoration: none;
   
-   padding-top: 20px;
+   padding-top: 40px;
    
 }
 
 nav ul li a:hover 
 {
   color: #deebff;
-
+ 
 }
 
 
@@ -121,7 +125,7 @@ nav ul li a:hover
   display: block;
   width: auto;
   margin: 0 0 20px 0;
-  margin-left: 5px;
+  margin-left: 50px;
 }
 
 
@@ -130,7 +134,7 @@ nav ul li a:hover
 .home2 
 {margin-top: 30px;
   display: block;
-  margin-left: 5px;
+  margin-left: 50px;
 }
 
 
@@ -205,7 +209,7 @@ input[type="submit"]:hover
   justify-content: space-between;
   flex-wrap: wrap;
   margin-top: 30px;
-  margin-left: 5px;
+  margin-left: 50px;
   
 
   
@@ -273,6 +277,7 @@ transition: all 0.1s;
   margin: 0;
   display: flex;
   margin-top: 10px;
+  margin-left: 50px;
 }
 
 .information
@@ -296,7 +301,7 @@ display: flex;
  height: 100%;
  
  margin: 0;
- margin-top: 5px;
+ 
  
 
 }
@@ -305,7 +310,7 @@ display: flex;
 {
   
   width: 70%;
-  
+  margin-top: 50px;
   border-radius: 20px;
   background-color: #f2f2f2;
   margin-right: 30px;
@@ -447,13 +452,10 @@ aside
   flex-direction: column;
   flex-wrap: wrap;
   width: 30%;
-  
   border:  3px solid rgb(253, 249, 249) ;
-  
   border-radius: 20px;
   background-color: #f2f2f2;
-  padding: 17px;
-  margin: 10px;
+  
   margin-left: 60px;
   
 }
@@ -590,7 +592,7 @@ transition: 0.1s;
   width: 100%;
   
   margin-top: 50px;
-  margin-left: 5px;
+  margin-left: 50px;
 
 
 }
@@ -859,7 +861,7 @@ footer ul li a
     padding: 0;
     display: flex;
     flex-direction: column;
-    margin: 0;
+    
    
   }
   
@@ -881,13 +883,13 @@ nav
  {                     
   display: block;
   width: 100%; 
-  
+ 
 
  
 display: flex;
 flex-direction: column ;
 flex-flow: wrap;
-  margin: 0;
+  
 
   
 }
@@ -897,7 +899,8 @@ nav ul
   display: flex;
   flex-flow: row wrap-reverse;
   width: 100%;
-  margin: 0;
+  height: 140px;
+ 
   padding: 0;
 }
 
@@ -905,7 +908,7 @@ nav ul li
 {
   position: relative;
   display: flex;
-   margin: 10px;
+  
  padding-top: 20px;
  
  
@@ -924,17 +927,18 @@ nav ul li a
 .hebergement_info 
 
 { margin-right: 0;
- 
   border-top: 0;
-
+margin-bottom: 10px;
+  
   MARGIN-RIGHT: 90px;
   margin-left: 50px;
+
 
 }
 
 .inscrir_info
 {margin-left: 270px;
- margin-top: 10px;
+ margin-top: 40px;
  
   padding-right: 5px;
   font-size: 20px;
@@ -958,7 +962,7 @@ nav ul li a
   {
     display: block;
     width: 100%;
-  
+  margin-top: 50px;
    margin-left: 10px;
     
   }
@@ -1464,30 +1468,32 @@ display: flex;
 aside {
   background-color:#F2F2F2;
   width: 100%;
-  height: 100%;
-  margin: auto;
+  margin-left: 0;
   border-radius: 0;
+  border: none;
   margin-bottom: 30px;
 }
 .aside-container
 {
-  width: 100%;
-  position: relative;
-  margin-left:auto ;
+  
+  
+  
   flex-direction: row; 
 display: inline-flex;
-margin: 10px;
+
+
 JUSTIFY-CONTENT: CENTER;
 } 
 .aside_title
 {
   padding-top: 5px;
-  margin-left: 10px;
+  padding-left: 0;
+  
 }
 .direction 
 {
   margin-right: 0;
-  padding-left: 370px;
+  padding-left: 400px;
 }
 .aside_title .direction
 {
@@ -1496,11 +1502,11 @@ JUSTIFY-CONTENT: CENTER;
   flex-direction: row;
   position: relative;
   justify-content: space-between;
-  margin: auto;
+  
 }
 .aside_hotel
  {
-  width: 180px;
+  width: 270px;
   height: 210px;
   border-radius: 20px;
  transition: 0.1s;
@@ -1518,7 +1524,7 @@ JUSTIFY-CONTENT: CENTER;
 }
 .aside-body
 {
-  width: 170px;
+  width: 260px;
   height: 100px;
   padding-left: 10px;
   position: relative;
