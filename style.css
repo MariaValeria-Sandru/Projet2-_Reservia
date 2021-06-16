@@ -14,53 +14,6 @@ body
     padding: 0;
 
 }
-/*
-header{
-  
-  display: flex;
- flex-direction: row;
-}
-img{
-  width: 100px; 
-}
-nav 
- {                     
-  display: flex;
- flex-direction: row;
- 
-  
-}.logo 
-{
-  display: block;
-  width: 100px;
-  height: 100px;
-  position: absolute;
-  padding-top: 25px;
-  margin: 0;
-  padding-left: 0;
-font-size: 30px;
-  
-}
-
-
-nav ul li 
-{
-  
-  margin: 10px;
-
-}
-nav ul 
-{ display: flex;
-  flex-direction: row;
-  
-  
-  position: relative;
-  
-  
- 
- background-color: tomato;
-
-}*/
 
 
 header{
@@ -78,10 +31,10 @@ img{
   display: block;
   width: 100px;
   height: 100px;
-  position: absolute;
+ position: absolute;
   padding-top: 50px;
   margin: 0;
-  padding-left: 0;
+  padding-left: 5px;
 font-size: 30px;
 }
 
@@ -118,7 +71,8 @@ nav ul li
   margin: 10px;
   
 }
-nav ul li a 
+
+nav ul li a
 { color: #0065fc; 
  
   text-decoration: none; 
@@ -133,20 +87,23 @@ nav ul li a
   
 
 }
-
+.activity_info  a{
+  color: black;
+}
 
 
 .inscrir_info{
   
   margin-right: 0;
   padding-right: 5px;
-  padding-top: 20px;
+ padding-top: 20px;
 }
 .activity_info 
 {
   text-decoration: none;
-  color: black;
-  padding-top: 20px;
+  
+   padding-top: 20px;
+   
 }
 
 nav ul li a:hover 
@@ -164,15 +121,18 @@ nav ul li a:hover
   display: block;
   width: auto;
   margin: 0 0 20px 0;
-  
+  margin-left: 5px;
 }
+
 
 /****************************BUTTON SEARCH***********************************/
 
 .home2 
 {margin-top: 30px;
   display: block;
+  margin-left: 5px;
 }
+
 
 input 
 {
@@ -245,6 +205,9 @@ input[type="submit"]:hover
   justify-content: space-between;
   flex-wrap: wrap;
   margin-top: 30px;
+  margin-left: 5px;
+  
+
   
 }
 .filter
@@ -342,12 +305,11 @@ display: flex;
 {
   
   width: 70%;
-  height: 100%;
+  
   border-radius: 20px;
   background-color: #f2f2f2;
   margin-right: 30px;
   margin: 10px;
-  position: relative;
   flex-wrap: wrap;
   align-content: flex-start;
   display: inline-flex;
@@ -408,6 +370,7 @@ margin-left: 45px;
   flex-direction: column;
   height: 100%;
   width: 100%;
+  
 }
 
 a
@@ -482,9 +445,11 @@ aside
   
   display: flex;
   flex-direction: column;
-  width: 30%;
-  border:  3px solid rgb(253, 249, 249) ;
   flex-wrap: wrap;
+  width: 30%;
+  
+  border:  3px solid rgb(253, 249, 249) ;
+  
   border-radius: 20px;
   background-color: #f2f2f2;
   padding: 17px;
@@ -521,21 +486,23 @@ aside
     padding-left: 5px;
     position: relative;
     flex-wrap: wrap;
-
 }
 
 .aside_hotel
- {
+ {background-color: white;
     position: relative;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   border-radius: 20px;
-  background: white;
-  width: 420px;
+ 
+
+  
+  width: 320px;
   height: 160px;
   margin: 25px;
  transition: 0.1s;
- /*border:  4px solid rgb(253, 249, 249);*/
+ border:  4px solid rgb(253, 249, 249);
 }
 
 
@@ -555,11 +522,12 @@ transition-property: all;
 
 {
    float: right;
-   width: 285px;
+   width: 180px;
    height: 160px;
    text-align: left;
 border-radius: 0 20px  20px 0 ;
 transition: 0.1s;
+
 
 }
 .aside_hotel:hover 
@@ -575,12 +543,13 @@ transition: 0.1s;
   margin-left: 10px;
   font-size: 1rem;
   margin-right: 100px;
-  
+  width: 150px;
 }
 
 .aside-price
 { 
   margin-left: 10px;
+  
   font-size: 0.75rem
 
 }
@@ -595,7 +564,7 @@ transition: 0.1s;
   list-style: none;
   margin: 0;
   padding-left: 10px;
-  margin-top: 35px;
+  margin-top: 45px;
  
 }
 
@@ -615,11 +584,14 @@ transition: 0.1s;
 /************************activity*******************************/
 
 #activity{
+  display: flex;
+  flex-wrap: wrap;
   margin-left: 0;
   width: 100%;
-  height: 100%;
-  margin-top: 50px;
   
+  margin-top: 50px;
+  margin-left: 5px;
+
 
 }
 
@@ -627,6 +599,15 @@ transition: 0.1s;
 {
   text-decoration: none;
   color: black;
+  
+}
+.activity-container a{
+  
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+
   
 }
 .activity-container
@@ -638,6 +619,7 @@ transition: 0.1s;
   vertical-align: middle;
   column-gap: 30px;
   row-gap: 10px;
+  
 }
 
 .activity_port{
@@ -672,6 +654,7 @@ transition: 0.1s;
     margin-left: 10px;
     margin-top: 10px;
     
+
  }
 
 .activity_pomegues
@@ -890,37 +873,10 @@ footer ul li a
     display: block;
     width: 100px;
     height: 50px;
-    position: relative;
+    position: absolute;
   font-size: 20px;
   
   }
-  
-  .hebergement_info 
-
-{
-  border-top: 0;
-
-
-}
-
-
-
-.inscrir_info
-{
- margin-bottom: 100;
-  margin-right: 0;
-  position: relative;
-  float: right;
-  font-size: 20px;
-  padding-top: 0;
-  
-}
-.activity_info 
-{
-  text-decoration: none;
-  color: black;
-  margin-bottom: 40;
-}
 nav 
  {                     
   display: block;
@@ -939,18 +895,19 @@ nav ul
 {
  
   display: flex;
-  flex-direction: row;
-  
-  width: 335px;
+  flex-flow: row wrap-reverse;
+  width: 100%;
   margin: 0;
+  padding: 0;
 }
 
 nav ul li 
-{position: relative;
+{
+  position: relative;
   display: flex;
-   
-   margin-top: 0;
-   margin: 5px;
+   margin: 10px;
+ padding-top: 20px;
+ 
  
   
 }
@@ -958,16 +915,50 @@ nav ul li a
 { 
   color: #0065fc; 
   text-decoration: none; 
+
   
   
 }
+
+
+.hebergement_info 
+
+{ margin-right: 0;
+ 
+  border-top: 0;
+
+  MARGIN-RIGHT: 90px;
+  margin-left: 50px;
+
+}
+
+.inscrir_info
+{margin-left: 270px;
+ margin-top: 10px;
+ 
+  padding-right: 5px;
+  font-size: 20px;
+ 
+
+  
+  
+}
+.activity_info 
+{
+  text-decoration: none;
+  color: black;
+  margin-right: 0;
+  
+
+}
+
 
 
   .home1 
   {
     display: block;
     width: 100%;
-   margin-top: 100px;
+  
    margin-left: 10px;
     
   }
@@ -1032,6 +1023,7 @@ input[type="submit"]:hover
   display: flex;
   width: 100%;
   height: 220px;
+  margin-top: 0;
   
   display: inline-flex;
   flex-wrap: wrap;
@@ -1040,6 +1032,7 @@ input[type="submit"]:hover
 {
  font-size: 16px;
  margin-left: 10px;
+ 
  width: 300px;
 }
 .filter-button 
@@ -1057,7 +1050,7 @@ display: flex;
 
 }
 aside {
-  width: 320px;
+  width: 100%;
   height:100% ;
   border-radius: 0;
   margin-left: 0;
@@ -1403,8 +1396,12 @@ padding-top: 5px;
     height: 100%;
 display: flex;
 flex-direction: column;
+margin: 0;
+    padding: 0;
   }
  
+
+
 
 
   .home1 
@@ -1423,11 +1420,12 @@ flex-direction: column;
  height: 100%;
   flex-wrap: wrap;
   justify-content: left;
+
   
 }
 .filter
 {
-  font-size: 20px;
+  font-size: 17px;
  margin-left: 10px;
  
  margin-right: 20px;
@@ -1479,6 +1477,7 @@ aside {
   flex-direction: row; 
 display: inline-flex;
 margin: 10px;
+JUSTIFY-CONTENT: CENTER;
 } 
 .aside_title
 {
@@ -1558,6 +1557,9 @@ margin: 10px;
   border-radius: 0;
   padding: 0;
 }
+.housing-container{
+  JUSTIFY-CONTENT: CENTER;
+}
 .housing_title{
   padding-top: 5px;
 margin-left: 10px;
@@ -1612,7 +1614,7 @@ padding-top: 5px;
   padding-left: 28px;
 }
 .activity-container
-{
+{JUSTIFY-CONTENT: CENTER;
   width: 100%;
   display: flex;
   display: inline-flex;
@@ -1734,7 +1736,7 @@ padding-top: 5px;
   background-color:#F2F2F2;
   display: flex;
   flex-direction: row;
-  
+  JUSTIFY-CONTENT: CENTER;
 }
 
 
