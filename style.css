@@ -6,49 +6,41 @@ html {
 body 
 {
   font-family: 'Raleway', sans-serif;
-    overflow-x: hidden; 
-    width: 100%;
-    height: 100%;
-    font-size: 16px;
-    margin: 0;
-    padding: 0;
-
+  overflow-x: hidden; 
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
 }
-
-
-header{
+header
+{
   display: block;
   width: 100%;
-
   display: flex;
   margin: 0;
 }
-img{
+img
+{
   width: 100px; 
 }
 .logo 
 {
   display: block;
   width: 100px;
-  height: 100px;
- position: absolute;
+  position: absolute;
   padding-top: 35px;
   margin: 0;
   padding-left: 50px;
-font-size: 30px;
+  font-size: 30px;
 }
-
-
-
 nav 
  {                     
   display: block;
   width: 100%; 
   height: 100px; 
   position: relative;
-  margin: 0;
-
-  
+  margin: 0; 
 }
 nav ul 
 {
@@ -57,9 +49,7 @@ nav ul
   position: relative;
   MARGIN-TOP: 0;
   margin-right: 0px;
-  
 }
-
 nav ul li 
 {
   margin-left: 0; 
@@ -67,56 +57,40 @@ nav ul li
   list-style-type: none; 
   position: relative; 
   right: 0; 
-  
-  margin: 10px;
-  
+  margin: 10px; 
 }
 
 nav ul li a
-{ color: #0065fc; 
- 
+{ 
+  color: #0065fc; 
   text-decoration: none; 
-  
-  
 }
 
  .hebergement_info 
 {
   padding-top: 40px;
   border-top: 2px solid blue;
-  
-  
-  
-
 }
-
-
-.activity_info  a{
+.activity_info  a
+{
   color: black;
 }
-
-
-.inscrir_info{
-  
+.inscrir_info
+{
   margin-right: 0;
   padding-right: 5px;
- padding-top: 40px;
+  padding-top: 40px;
 }
 .activity_info 
 {
   text-decoration: none;
-  
-   padding-top: 40px;
-   
+  padding-top: 40px; 
 }
 
 nav ul li a:hover 
 {
   color: #deebff;
- 
 }
-
-
 
 /******************************TITLE******************************/
 
@@ -132,12 +106,10 @@ nav ul li a:hover
 /****************************BUTTON SEARCH***********************************/
 
 .home2 
-{margin-top: 30px;
+{
   display: block;
   margin-left: 50px;
 }
-
-
 input 
 {
   position: relative;
@@ -168,6 +140,7 @@ input
   border: 1px solid #f2f2f2;
   border-radius: 0 0 0 0;
   color: black;
+  font-weight: bold;
 }
 
 .search-icon 
@@ -194,6 +167,9 @@ input
 input[type="submit"]:hover 
 {
   background: #deebff;
+}
+.search-icon1{
+  display: none;
 }
 
 /**********************************--FILTRE SECTION---*****************************/
@@ -226,13 +202,14 @@ margin-left: 0;
 .filter-button 
 {
   background-color: white;
-  border: 1px solid #f2f2f2;
+  border: 1px solid #d6d4d4;
   border-radius: 2rem;
   padding: 10px 20px 10px 0;
   position: RELATIVE;
   display: FLEX;
   height: 25px;
   align-items: CENTER;
+  font-weight: bold;
 }
 .filter-button .button 
 {
@@ -299,6 +276,7 @@ transition: all 0.1s;
 display: flex;
  width: 100%;
  height: 100%;
+ flex-direction: row;
  
  margin: 0;
  
@@ -842,9 +820,9 @@ footer ul li a
 }
 
 
-/**********************************/
+/************************************************************************************************************************/
 
-/* Sur les écrans, quand la largeur de la fenêtre fait au maximum 1280px */
+/* Sur les écrans, quand la largeur de la fenêtre fait au maximum 670px */
 @media screen and (min-width: 360px)and (max-width: 670px)
 {
   body
@@ -858,9 +836,11 @@ footer ul li a
   header{
     display: block;
     width: 100%;
+    height: 150px;
     padding: 0;
     display: flex;
     flex-direction: column;
+   
     
    
   }
@@ -876,31 +856,24 @@ footer ul li a
     width: 100px;
     height: 50px;
     position: absolute;
-  font-size: 20px;
+    font-size: 20px;
   
   }
 nav 
  {                     
   display: block;
   width: 100%; 
- 
-
- 
-display: flex;
-flex-direction: column ;
-flex-flow: wrap;
-  
-
-  
+   height:100% ;
+  display: flex;
+  flex-direction: column ;
+  flex-flow: wrap;
 }
 nav ul 
 {
- 
   display: flex;
   flex-flow: row wrap-reverse;
   width: 100%;
-  height: 140px;
- 
+  height: 100%;
   padding: 0;
 }
 
@@ -908,65 +881,48 @@ nav ul li
 {
   position: relative;
   display: flex;
-  
+  margin: 0;
  padding-top: 20px;
- 
- 
-  
 }
 nav ul li a 
 { 
   color: #0065fc; 
-  text-decoration: none; 
-
-  
-  
+  text-decoration: none;
 }
-
 
 .hebergement_info 
-
-{ margin-right: 0;
+{ 
+  margin-right: 0;
   border-top: 0;
-margin-bottom: 10px;
-  
+  border-bottom: 2px solid blue;
   MARGIN-RIGHT: 90px;
   margin-left: 50px;
-
-
+  padding-bottom: 20px;
 }
-
 .inscrir_info
-{margin-left: 270px;
- margin-top: 40px;
- 
+{
+  margin-left: 270px;
+ font-weight: bolder;
   padding-right: 5px;
   font-size: 20px;
- 
-
-  
-  
 }
 .activity_info 
 {
   text-decoration: none;
   color: black;
   margin-right: 0;
+  border-bottom: 2px solid rgb(233, 233, 240);
   
-
+  
 }
-
-
-
   .home1 
   {
-    display: block;
-    width: 100%;
-  margin-top: 50px;
-   margin-left: 10px;
-    
+  display: block;
+  width: 100%;
+  margin-left: 10px;
   }
-  .home2{
+  .home2
+  {
     margin-left: 10px;
   }
   
@@ -977,28 +933,48 @@ input
   box-sizing: border-box;
   transition: 0.5s;
 }
+.search-button 
+{
+  display: none;
+
+ 
+}
+.search-icon1 {
+
+  width: 60px;
+  background-color:#0065FC ;
+  display: FLEX;
+  align-items: CENTER;
+  justify-content: CENTER;
+  border-radius: 15px 15px 15px 15px;
+  color: white;
+ position: relative;
+ 
+}
+
 .search-form
  {
   display: flex;
-  height: 35px;
+  height: 60px;
   margin: 0 0 20px 0;
 }
 .search-input 
 {
   background: #fff;
-  width: 200px;
-  height: 35px;
+  
+  height: 60px;
   border: none; /* modif*/
   outline: none; /* modif*/
   padding: 0 15px;
   border: 1px solid #f2f2f2;
-  border-radius: 0 0 0 0;
+  border-radius:0 0 0 0;
   color: black;
+  position: relative;
 }
 
 .search-icon 
 {
-  width: 35px;
+  width: 60px;
   background-color: #f2f2f2;
   display: FLEX;
   align-items: CENTER;
@@ -1006,32 +982,17 @@ input
   border-radius: 10px 0 0 10px;
 }
 
-.search-button 
-{
-  border-radius: 0 10px 10px 0;
-  width: 100px;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  background: #0065fc;
-  color: #fff;
-}
-
-input[type="submit"]:hover 
-{
-  background: #deebff;
-
-}
 .home3
 {
   display: flex;
   width: 100%;
   height: 220px;
   margin-top: 0;
-  
+  margin-left: 0;
   display: inline-flex;
   flex-wrap: wrap;
 }
+
 .filter
 {
  font-size: 16px;
@@ -1045,13 +1006,22 @@ margin-right: 10px;
 margin-left: 10px;
 margin-bottom: 5px;
 }
+
+
+
+
+
+
+.home4{
+  margin-left: 0;
+}
 .hebergement 
 {
 display: flex;
  width: 100%;
  height: 100%;
  flex-direction:column-reverse;
-
+margin-left: 0;
 }
 aside {
   width: 100%;
@@ -1066,7 +1036,7 @@ aside {
 
   width: 100%;
   position: relative;
-  margin-left:auto ;
+  padding-left: 30px;
   
 } 
 .aside_title{
@@ -1076,6 +1046,10 @@ margin-left: 0;
 }
 .direction 
 {margin: auto;
+  
+  margin-top: 0;
+  height: 20px;
+  width: 20px;
 
 
 }
@@ -1085,7 +1059,7 @@ margin-left: 0;
   display: flex;
   flex-direction: row;
   position: relative;
-  margin: auto;
+  
 
 }
 .aside_hotel
@@ -1159,11 +1133,19 @@ margin: 0;
 background-color: white;
   width: 100%;
   height: 100%;
-  margin: auto;
+  margin-left:0 ;
   border-radius: 0;
   padding: 0;
+  justify-content: left;
+  
 }
-
+.housing-container 
+{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  
+} 
 .housing_title{
   padding-top: 5px;
 margin-left: 10px;
@@ -1174,6 +1156,7 @@ margin-left: 10px;
  
   width: 310px;
   height: 170px;
+  margin-left: 0;
   
 
   
@@ -1229,6 +1212,7 @@ padding-top: 5px;
 #activity{
   margin-top: 10px;
   width: 100%;
+  margin-left: 0;
  
 }
 
@@ -1380,7 +1364,10 @@ padding-top: 5px;
   flex-direction: column;
   
 }
-
+.list-title-element{
+  
+  width: 150px;
+}
 .list-element 
 {
 
@@ -1392,6 +1379,7 @@ padding-top: 5px;
 }
 }
 
+/************************************************************************************************************************/
 /* Sur tous types d'écran, quand la largeur de la fenêtre est comprise entre 1024px et 1280px */
 @media screen and (min-width: 760px) and (max-width: 1024px){
   body
@@ -1404,22 +1392,30 @@ margin: 0;
     padding: 0;
   }
  
+  header{
+   margin-left:0 ;
 
+  }
 
 
 
   .home1 
-  {
+
+{margin-left:;
     display: block;
     width: 100%;
-   
+    margin-left: 6px;
     
+    
+  }
+  .home2{
+    margin-left:6px ;
   }
 
 .home3
 {display: flex;
   flex-direction: row;
-  
+margin-left: 4px;
   width: 100%;
  height: 100%;
   flex-wrap: wrap;
@@ -1456,8 +1452,11 @@ margin-bottom: 5px;
   text-decoration: none;
   
 }
+.home4{
+  margin-left: 0;
+}
 .hebergement 
-{
+{margin-left: 0;
 display: flex;
  width: 100%;
  height: 100%;
@@ -1475,25 +1474,23 @@ aside {
 }
 .aside-container
 {
+  width: 100%;
   
-  
-  
+justify-content: center;
   flex-direction: row; 
 display: inline-flex;
 
-
-JUSTIFY-CONTENT: CENTER;
 } 
 .aside_title
 {
   padding-top: 5px;
-  padding-left: 0;
+  padding-left: 38px;
   
 }
 .direction 
 {
   margin-right: 0;
-  padding-left: 400px;
+  padding-left: 350px;
 }
 .aside_title .direction
 {
@@ -1506,7 +1503,7 @@ JUSTIFY-CONTENT: CENTER;
 }
 .aside_hotel
  {
-  width: 270px;
+  width: 180px;
   height: 210px;
   border-radius: 20px;
  transition: 0.1s;
@@ -1524,9 +1521,9 @@ JUSTIFY-CONTENT: CENTER;
 }
 .aside-body
 {
-  width: 260px;
+  width: 100%;
   height: 100px;
-  padding-left: 10px;
+  padding-left: 0;
   position: relative;
   text-align: left;
   transition-property: all;
@@ -1568,7 +1565,8 @@ JUSTIFY-CONTENT: CENTER;
 }
 .housing_title{
   padding-top: 5px;
-margin-left: 10px;
+  margin-left: 0;
+  padding-left: 48px;
 }
 .housing_hotel
  {  
@@ -1604,20 +1602,21 @@ width: 100%;
 {
 text-decoration: none; 
 color: black;
-padding-left: 28px;
+padding-left: 48px;
 margin:0;
 padding-top: 5px;
 }
 #activity{
   margin-top: 10px;
   width: 100%;
+  margin-left: 0;
 }
 .activity_title a
 {
   text-decoration: none;
   color: black;
-  margin:0;
-  padding-left: 28px;
+  margin-left: 0;
+  padding-left: 48px;
 }
 .activity-container
 {JUSTIFY-CONTENT: CENTER;
@@ -1736,7 +1735,7 @@ padding-top: 5px;
 }
 
 .footer_body 
-{
+{margin-left: 0;
   width: 100%;
   height:100%;
   background-color:#F2F2F2;
