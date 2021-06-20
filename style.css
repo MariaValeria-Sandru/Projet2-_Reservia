@@ -67,7 +67,7 @@ nav ul li a
 }
 
  .hebergement_info 
-{
+{font-weight: bolder;
   padding-top: 40px;
   border-top: 2px solid blue;
 }
@@ -76,13 +76,13 @@ nav ul li a
   color: black;
 }
 .inscrir_info
-{
+{font-weight: bolder;
   margin-right: 0;
   padding-right: 5px;
   padding-top: 40px;
 }
 .activity_info 
-{
+{font-weight: bolder;
   text-decoration: none;
   padding-top: 40px; 
 }
@@ -178,7 +178,7 @@ input[type="submit"]:hover
 {
     
   
-  display: flex;
+  display: inline-flex;
   flex-direction: row;
   height: 50px;
   width: 1000px;
@@ -260,15 +260,28 @@ transition: all 0.1s;
 .information
  {
   background-color: white;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+ 
+
+  
+}
+.information_icons{
+  background-color: white;
   font-size: 20px;
   color: #0065fc;
   border-radius: 2rem;
-  border: none;
-  padding: 15px;
+  border: 2px solid #d6d4d4;
+  padding: 5px;
   outline: none;
   position: RELATIVE;
-  height: 25px;
-  width: 25px;
+  height: 15px;
+  width: 15px;
+  font-size: 15px;
+  margin-left: 10px; 
+  display: flex;
+  justify-content: center;
 }
 /*************************div class hebergement*******************************/
 .hebergement 
@@ -428,12 +441,10 @@ aside
   
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   width: 30%;
   border:  3px solid rgb(253, 249, 249) ;
   border-radius: 20px;
   background-color: #f2f2f2;
-  
   margin-left: 60px;
   
 }
@@ -466,6 +477,7 @@ aside
     padding-left: 5px;
     position: relative;
     flex-wrap: wrap;
+    width: 100%;
 }
 
 .aside_hotel
@@ -475,7 +487,7 @@ aside
   flex-direction: row;
   flex-wrap: wrap;
   border-radius: 20px;
- 
+  width: 100%;
 
   
   width: 320px;
@@ -902,7 +914,7 @@ nav ul li a
 .inscrir_info
 {
   margin-left: 270px;
- font-weight: bolder;
+ 
   padding-right: 5px;
   font-size: 20px;
 }
@@ -924,62 +936,75 @@ nav ul li a
   .home2
   {
     margin-left: 10px;
+    width: auto;
   }
   
-input 
-{
-  position: relative;
-  font-size: 15px;
-  box-sizing: border-box;
-  transition: 0.5s;
-}
+
 .search-button 
 {
   display: none;
 
  
 }
-.search-icon1 {
 
-  width: 60px;
+
+
+.search-icon1 {
+ height: 70px;
+ width: 70px; 
   background-color:#0065FC ;
   display: FLEX;
   align-items: CENTER;
   justify-content: CENTER;
-  border-radius: 15px 15px 15px 15px;
+  border-radius: 20px 20px 20px 20px;
   color: white;
- position: relative;
- 
+  font-size: 20px;
+ position: absolute;
+ outline: none;
+ border: none;
+ margin-left: 284px;
+ cursor: pointer;
+
 }
 
 .search-form
  {
-  display: flex;
-  height: 60px;
-  margin: 0 0 20px 0;
+  height: 70px;
+  width: 100%;
+display: inline-flex;
+  
+  outline: none;
+   border: none;
+   margin-right: 10px;
+
+
 }
 .search-input 
 {
-  background: #fff;
-  
-  height: 60px;
-  border: none; /* modif*/
-  outline: none; /* modif*/
-  padding: 0 15px;
+  padding-left: 15px;
+  width: 100%;
+  height: 70px;
+  border: none; 
+  outline: none; 
   border: 1px solid #f2f2f2;
-  border-radius:0 0 0 0;
+  border-radius:0 20px 20px  0 ;
   color: black;
   position: relative;
+  margin-right: 10px;
+  
 }
 
 .search-icon 
 {
-  width: 60px;
+  width: 80px;
   background-color: #f2f2f2;
   display: FLEX;
   align-items: CENTER;
   justify-content: CENTER;
-  border-radius: 10px 0 0 10px;
+  border-radius: 25px 0 0 25px;
+  font-size: 20px;
+
+  
 }
 
 .home3
@@ -991,10 +1016,11 @@ input
   margin-left: 0;
   display: inline-flex;
   flex-wrap: wrap;
+
 }
 
 .filter
-{
+{font-weight: bolder;
  font-size: 16px;
  margin-left: 10px;
  
@@ -1005,6 +1031,7 @@ input
 margin-right: 10px;
 margin-left: 10px;
 margin-bottom: 5px;
+
 }
 
 
@@ -1381,10 +1408,13 @@ padding-top: 5px;
 
 /************************************************************************************************************************/
 /* Sur tous types d'écran, quand la largeur de la fenêtre est comprise entre 1024px et 1280px */
-@media screen and (min-width: 760px) and (max-width: 1024px){
+@media screen and (min-width: 760px) and (max-width: 1024px)
+
+
+{
   body
   {
-    width: 1204;
+  
     height: 100%;
 display: flex;
 flex-direction: column;
@@ -1401,7 +1431,7 @@ margin: 0;
 
   .home1 
 
-{margin-left:;
+{
     display: block;
     width: 100%;
     margin-left: 6px;
