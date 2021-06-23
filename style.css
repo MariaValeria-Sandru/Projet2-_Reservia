@@ -948,8 +948,8 @@ nav ul li a
 
 
 .search-icon1 {
- height: 70px;
- width: 70px; 
+ height: 75px;
+ width: 100px; 
   background-color:#0065FC ;
   display: FLEX;
   align-items: CENTER;
@@ -957,24 +957,30 @@ nav ul li a
   border-radius: 20px 20px 20px 20px;
   color: white;
   font-size: 20px;
- position: absolute;
+ 
  outline: none;
  border: none;
- margin-left: 284px;
+ position: relative;
+ 
  cursor: pointer;
 
 }
 
 .search-form
  {
-  height: 70px;
+  height: 75px;
   width: 100%;
 display: inline-flex;
   
   outline: none;
-   border: none;
+   border-radius: 2rem solid #f2f2f2;
    margin-right: 10px;
-
+   box-sizing: border-box;
+   width: 100%;
+  border-radius:20px 20px 20px 20px  ;
+  border: solid   #f2f2f2 0.5px;
+   justify-content: center;
+   
 
 }
 .search-input 
@@ -982,29 +988,32 @@ display: inline-flex;
   padding-left: 15px;
   width: 100%;
   height: 70px;
-  border: none; 
+  
   outline: none; 
-  border: 1px solid #f2f2f2;
-  border-radius:0 20px 20px  0 ;
+  border: none;
+
   color: black;
   position: relative;
-  margin-right: 10px;
+
   
 }
 
 .search-icon 
-{
+{ height: 75px;
   width: 80px;
-  background-color: #f2f2f2;
+  background-color: #e7e1e1;
   display: FLEX;
   align-items: CENTER;
   justify-content: CENTER;
-  border-radius: 25px 0 0 25px;
+  border-radius: 20px 0 0 20px;
   font-size: 20px;
 
   
 }
 
+.input {
+  margin-right: 0;
+}
 .home3
 {
   display: flex;
@@ -1425,7 +1434,9 @@ margin: 0;
 
   }
 
-
+.nav ul {
+  margin-right: 15px;
+}
 
   .home1 
 
