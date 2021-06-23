@@ -819,7 +819,7 @@ li{
   list-style: none;
   text-decoration: none;
   margin-top: 5px;
-  
+  width: 190px;
 }
 
 footer ul li a 
