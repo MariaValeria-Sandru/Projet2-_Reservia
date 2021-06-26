@@ -6,13 +6,84 @@ html {
 body 
 {
   font-family: 'Raleway', sans-serif;
-  overflow-x: hidden; 
+ /* overflow-x: hidden; */
   width: 100%;
-  height: 100%;
   font-size: 16px;
   margin: 0;
   padding: 0;
 }
+header{
+  width: 100%;
+  /*flex-wrap: wrap;*/
+  display: flex;
+  justify-content: space-between;
+ 
+
+}
+img
+{
+  width: 100%; 
+}
+.logo 
+{padding-left: 30px;
+ padding-top: 25px;
+ height: 100px;
+}
+nav 
+ {
+ display: flex;
+  flex-wrap: wrap;
+ width: 100%;
+ 
+justify-content: flex-end;
+
+}
+nav ul 
+{
+ 
+  
+  display: flex;
+  
+  
+}
+nav ul li 
+{
+
+  list-style-type: none; 
+  width: 100%; 
+ padding: 10px;
+ 
+}
+nav ul li a
+{ 
+  color: #0065fc; 
+  text-decoration: none; 
+}
+.hebergement_info 
+{font-weight: bolder;
+  padding-top: 40px;
+  border-top: 2px solid blue;
+}
+.activity_info  a
+{
+  color: black;
+}
+.inscrir_info
+{font-weight: bolder;
+  margin-right: 0;
+  padding-top: 40px;
+}
+.activity_info 
+{font-weight: bolder;
+  text-decoration: none;
+  padding-top: 40px; 
+}
+
+nav ul li a:hover 
+{
+  color: #deebff;
+}
+/*
 header
 {
   display: block;
@@ -20,10 +91,7 @@ header
   display: flex;
   margin: 0;
 }
-img
-{
-  width: 100px; 
-}
+
 .logo 
 {
   display: block;
@@ -35,7 +103,10 @@ img
   font-size: 30px;
 }
 nav 
- {                     
+ {  
+   
+   
+                   
   display: block;
   width: 100%; 
   height: 100px; 
@@ -91,7 +162,7 @@ nav ul li a:hover
 {
   color: #deebff;
 }
-
+*/
 /******************************TITLE******************************/
 
 .home1 
@@ -570,15 +641,13 @@ transition: 0.1s;
 
 /************************activity*******************************/
 
+
 #activity{
   display: flex;
   flex-wrap: wrap;
   margin: 50px auto 0;
-  width: 95%;
-  
-  
-
-
+  width: 100%;
+  background-color: darkmagenta;
 }
 
 .activity_title a
@@ -588,27 +657,33 @@ transition: 0.1s;
   
 }
 .activity-container a{
-  
+  background-color: darkorange;
   display: flex;
   flex-direction: column;
-  height: 100%;
-  width: 100%;
+  
 
   
 }
 .activity-container
-{
+
+{background-color: gold;
+  display: flex;
   width: 100%;
+  
+
+
+  /*
+  
   display: grid;
   grid-template-columns: repeat(4,1fr);
   vertical-align: middle;
   column-gap: 30px;
   row-gap: 10px;
-  
+  */
 }
 
-.activity_port{
-  grid-column-start: 1;
+.activity_port{/*
+ grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 1;
   grid-row-end: 3;
@@ -616,48 +691,45 @@ transition: 0.1s;
  border-radius: 30px;
  box-shadow: 0 5px 50px rgb(235, 231, 231); 
 
- height: 450px;
- width: 300px;
+
  border:4px solid rgb(253, 249, 249);
  padding-top: 0;
- transition: all.1s;
+ transition: all.1s;*/
  }
  
 .activity-thumb-port
-{ 
+{ /*
   border-radius: 30px 30px 0 0  ;
-  height: 400px;
- width: 300px
+*/
 }
-.activity_port:hover{
+.activity_port:hover{/*
   transition: 0.1s;
   background-color: rgb(219, 228, 228);
-  transform: translateY(-5px);
+  transform: translateY(-5px);*/
   }
 .body-activity
 {
+  /*
     margin-left: 10px;
     margin-top: 10px;
     
-
+*/
  }
 
 .activity_pomegues
-{
+{/*
 background-color:white;
 border-radius: 30px;
 box-shadow: 0 5px 50px rgb(235, 231, 231); 
-height: 250px;
-width: 350px;
+
 
 transition: all 0.1s;
 border:  4px solid rgb(253, 249, 249);
-padding-top: 0;
+padding-top: 0;*/
 }
 .activity-thumb-pomegues
 {
-width: 350px;
-height: 200px;
+/*
   justify-content: center;
   border-radius: 30px 30px 0 0  ;
   object-fit: cover;
@@ -665,12 +737,12 @@ height: 200px;
 .activity_pomegues:hover{
 transition: 0.1s;
 background-color: rgb(219, 228, 228);
-transform: translateY(-5px);
+transform: translateY(-5px);*/
 }
 
 
   .activity_frioul
-  {
+  {/*
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 2;
@@ -679,29 +751,28 @@ transform: translateY(-5px);
     background-color: white;
     border-radius: 30px;
     box-shadow: 0 5px 50px rgb(235, 231, 231); 
-     height: 140px;
+     
      transition: all 0.1s;
    border:  4px solid rgb(253, 249, 249);
    padding-top: 0;
-   width: 350px;
+   */
  }
  .activity-thumb-frioul
-  {
-    width: 350px;
-    height: 100px;
+  {/*
+  
     justify-content: center;
      border-radius: 30px 30px 0 0  ;
      object-fit: cover;
- 
+ */
   }
  .activity_frioul:hover
- {
+ {/*
    transition: 0.1s;
    background-color:rgb(219, 228, 228);
-   transform: translateY(-5px);
+   transform: translateY(-5px);*/
  }
 
-  .activity_calanques{
+  .activity_calanques{/*
     grid-column-start: 3;
     grid-column-end: 4;
     grid-row-start: 1;
@@ -709,42 +780,38 @@ transform: translateY(-5px);
     background-color: white;
     border-radius: 30px;
     box-shadow: 0 5px 50px rgb(235, 231, 231); 
-    height: 450px;
-    width: 300px;
+ 
     transition: all 0.1s;
     border:  4px solid rgb(253, 249, 249);
-    padding-top: 0;
+    padding-top: 0;*/
    
  }
- .activity-thumb-calanques{
+ .activity-thumb-calanques{/*
   object-fit: cover;
   border-radius: 30px 30px 0 0  ;
-  height: 400px;
-  width: 300px
- 
+  
+ */
 }
- .activity_calanques:hover{
+ .activity_calanques:hover{/*
    transition: 0.3s;
    background-color:rgb(219, 228, 228);
    transform: translateY(-5px);
-
+*/
  }
 
 
-.activity_garde{
+.activity_garde{/*
   background-color: white;
   border-radius: 30px;
   box-shadow: 0 5px 50px rgb(235, 231, 231); 
-   height: 220px;
-   width: 350px;
+   
    transition: all .1s;
    border:  4px solid rgb(253, 249, 249);
    padding-top: 0;
-   
+   */
  }
- .activity-thumb-garde{
-  width: 350px;
-  height: 160px;
+ .activity-thumb-garde{/*
+  
   justify-content: center;
    border-radius: 30px 30px 0 0  ;
    object-fit: cover;
@@ -752,31 +819,29 @@ transform: translateY(-5px);
  .activity_garde:hover{
    transition: 0.1s;
    background-color: rgb(219, 228, 228);
-   transform: translateY(-5px);
+   transform: translateY(-5px);*/
  }
 
 
-.activity_longchamp{
+.activity_longchamp{/*
   background-color: white;
   border-radius: 30px;
   box-shadow: 0 5px 50px rgb(235, 231, 231) ; 
-  height: 180px;
-  width: 350px;
+  
   transition: all .1s;
   border:  4px solid rgb(253, 249, 249);
-  position: relative;
+  position: relative;*/
 }
 .activity-thumb-longchamp{
-  width: 350px;
-  height: 140px;
-  
-   border-radius: 30px 30px 0 0  ; 
+ 
+  /*
+   border-radius: 30px 30px 0 0  ; */
 }
 
-.activity_longchamp:hover{
+.activity_longchamp:hover{/*
   transition: 0.1s;
   background-color:rgb(219, 228, 228) ;
-  transform: translateY(-5px);
+  transform: translateY(-5px);*/
 }
 
 /*****************************FOOTER**************************/
